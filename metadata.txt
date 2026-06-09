@@ -1,0 +1,16 @@
+[general]
+name=AutoGR Bridge
+qgisMinimumVersion=3.22
+description=Launch AutoGR-SIFT from QGIS and automatically import georeferenced results.
+about=Connects QGIS to AutoGR-Toolkit v6.0+ for automatic image georeferencing. Select a base raster or canvas snapshot, add dataset images, choose a descriptor and click Run. Results are imported back into QGIS automatically.
+version=6.1
+author=Gianluca Cantoro
+email=gianluca.cantoro@gmail.com
+homepage=https://github.com/giancan/AutoGR-Bridge
+tracker=https://github.com/giancan/AutoGR-Bridge/issues
+repository=https://github.com/giancan/AutoGR-Bridge
+tags=georeferencing,raster,computer vision,image matching,SIFT,SuperGLUE,LoFTR
+category=Raster
+experimental=False
+deprecated=False
+icon=AutoGR-Bridge.ico
