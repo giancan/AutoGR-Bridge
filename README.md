@@ -4,6 +4,8 @@ A QGIS plugin that connects [AutoGR-Toolkit](https://github.com/giancan/AutoGR-T
 
 Select a reference raster (or a canvas snapshot), add your dataset images, choose a feature descriptor, and click **Run**. AutoGR-SIFT launches automatically, and when processing finishes the georeferenced results are imported back into your QGIS project.
 
+You can find the latest version, you can visit the [official QGIS Plugin page](https://plugins.qgis.org/plugins/AutoGR_Bridge/) or directly from your QGIS.
+
 ---
 
 ## Requirements
