@@ -1,45 +1,15 @@
 [general]
 name=AutoGR Bridge
 qgisMinimumVersion=3.22
-qgisMaximumVersion=4.99
-supportsQt6=True
 description=Launch AutoGR-SIFT from QGIS and automatically import georeferenced results.
-about=Connects QGIS to AutoGR-Toolkit v7.0+ for automatic image georeferencing. Select a base raster or canvas snapshot, add dataset images, choose a descriptor and click Run. Results are imported back into QGIS automatically. The dataset is remembered between sessions and 64-bit-only descriptors are disabled when a 32-bit target is selected.
-version=7.0.0
-changelog=7.0.0 - Major update since 6.1.
-    Map overlay preview: place, scale and rotate the photo directly on the
-    map canvas before matching. Scale with the slider, a typed percentage or
-    the corner handles (Shift: around the centre). The base image can be
-    cropped to the overlay footprint, and the previous map view is restored
-    afterwards.
-    Optional photo / mission data: film format (14 historical sizes in cm
-    and inches, or the size as scanned -- border included -- read from the
-    file's resolution when it records one), flying height (feet or metres)
-    and focal length (inches or mm) set the overlay size, and any one of them
-    can be guessed from the other two. Ground sizes are measured on the
-    ellipsoid, so they stay correct on Web Mercator basemaps, and non-square
-    frames are matched to the scan whichever way up it is.
-    Date and time draw a sun-shadow arrow to help with rotation (Shift-click
-    the map to start it from a chosen point), and the time can be guessed from
-    a shadow aimed by hand. The time is entered as printed on the frame, with
-    its time zone proposed from the date and place (e.g. wartime double summer
-    time in Britain and continental Europe). Values worked out by a Guess
-    button are marked 'guessed' until edited. A live placement box shows
-    scale, ground sampling, rotation and shadow azimuth.
-    Descriptors and matchers are now read from the linked AutoGR-SIFT, so the
-    list always matches the installed toolkit (new: RootSIFT, SuperPoint).
-    64-bit-only methods are disabled when a 32-bit toolkit is selected.
-    Base snapshots are north-up with square pixels, and a warning appears
-    when the project CRS is in degrees, which would distort the snapshot.
-    The settings window no longer blocks QGIS, and the dataset is remembered
-    between sessions. Temporary snapshot folders are now cleaned up.
-    QGIS 4 support: the same package runs on QGIS 3.22+ and QGIS 4.
+about=Connects QGIS to AutoGR-Toolkit v6.0+ for automatic image georeferencing. Select a base raster or canvas snapshot, add dataset images, choose a descriptor and click Run. Results are imported back into QGIS automatically.
+version=6.1
 author=Gianluca Cantoro
 email=gianluca.cantoro@gmail.com
 homepage=https://github.com/giancan/AutoGR-Bridge
 tracker=https://github.com/giancan/AutoGR-Bridge/issues
 repository=https://github.com/giancan/AutoGR-Bridge
-tags=georeferencing,raster,computer vision,image matching,SIFT,RootSIFT,SuperGLUE,LoFTR,SuperPoint
+tags=georeferencing,raster,computer vision,image matching,SIFT,SuperGLUE,LoFTR
 category=Raster
 experimental=False
 deprecated=False
