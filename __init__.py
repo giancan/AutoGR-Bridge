@@ -13,8 +13,11 @@ def classFactory(iface):
             import traceback
             QgsMessageLog.logMessage("Init error:\n" + traceback.format_exc(),
                                      "AutoGR Bridge", Qgis.Critical)
-        except Exception:
-            pass
+        except Exception as log_error:
+            # the message log itself is unavailable: the Python console is
+            # the last place left to say why the plugin did not load
+            print("AutoGR Bridge: could not log the start-up error:", log_error)
         raise
 
-__version__ = "6.1"
+
+__version__ = "7.0.0"
